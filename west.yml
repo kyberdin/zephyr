@@ -21,6 +21,8 @@ manifest:
   remotes:
     - name: upstream
       url-base: https://github.com/zephyrproject-rtos
+    - name: kyberdin
+      url-base: https://github.com/kyberdin
 
   #
   # Please add items below based on alphabetical order
