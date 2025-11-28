@@ -9,21 +9,9 @@ Overview
 The Nordic IronSide SE Update sample updates the IronSide SE firmware on a SoC that already has IronSide SE installed.
 It can update both the main image and the recovery image of IronSide SE using the IronSide SE firmware release ZIP file.
 
-Update procedure
-****************
+See the official `Ironside SE documentation`_ for details about the service and update process.
 
-The update procedure works as follows:
-
-1. The application invokes the IronSide SE update service and passes the parameters that correspond to the location of the HEX file of the IronSide SE firmware update.
-
-#. The application prints the return value of the service call and outputs information from the update HEX file.
-
-#. After the service call completes, the IronSide SE firmware updates the internal state of the device.
-
-#. The firmware installs the update during the next device boot.
-   This operation can take several seconds.
-
-Once the operation has completed, you can read the boot report to verify that the update has taken place.
+.. _Ironside SE documentation: https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54h/ug_nrf54h20_ironside_update.html
 
 Building and running the application for nrf54h20dk/nrf54h20/cpuapp
 *******************************************************************
